@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .containser {
+        border: 1px solid black;
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+      }
+      .author {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-weight: bold;
+        color: #555;
+      }
+      button {
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 7px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containser">
+      <div class="displayQuote"></div>
+      <br>
+      <div class="author"></div>
+    </div>
+    <button>Generate Quote</button>
+    <script src="script.js"></script>
+  </body>
+</html>
